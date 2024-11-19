@@ -1,17 +1,18 @@
+import Link from 'next/link'
 import React from 'react'
 
-import styles from "../../styles/Home.module.css"
 
 function Layout({children}) {
   return (
     <>
-       <header className={styles.header}>
+       <header className="header">
         <h2>Botostart CRM</h2>
+        <Link href="/add-customer">Add Customer</Link>
        </header>
-       <div className={styles.main}>
+       <div className="main">
          {children}
        </div>
-       <footer className={styles.footer}>
+       <footer className="footer">
          <p>Next.js Cours | CRM Project &copy;</p>
        </footer>
     </>
